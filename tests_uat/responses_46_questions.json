@@ -1,0 +1,345 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created": "2025-08-30T12:00:00",
+    "description": "Réponses attendues pour les 46 questions UAT",
+    "total_questions": 46
+  },
+  "questions": {
+    "basic": {
+      "1": {
+        "question": "Quelle est ma consommation d'électricité hier ?",
+        "expected_type": "consumption_value",
+        "expected_format": "X.X kWh",
+        "category": "basic"
+      },
+      "2": {
+        "question": "Combien ai-je consommé ce mois-ci ?",
+        "expected_type": "consumption_value",
+        "expected_format": "X.X kWh",
+        "category": "basic"
+      },
+      "3": {
+        "question": "Quelle est ma consommation moyenne par jour ?",
+        "expected_type": "consumption_value",
+        "expected_format": "X.X kWh",
+        "category": "basic"
+      },
+      "4": {
+        "question": "Quelle sera ma consommation demain ?",
+        "expected_type": "forecast_value",
+        "expected_format": "X.X kWh (prévision)",
+        "category": "forecast"
+      },
+      "5": {
+        "question": "Quelle sera ma consommation la semaine prochaine ?",
+        "expected_type": "forecast_value",
+        "expected_format": "X.X kWh (prévision)",
+        "category": "forecast"
+      },
+      "6": {
+        "question": "Quelle est ma consommation par heure ?",
+        "expected_type": "consumption_value",
+        "expected_format": "X.X kWh",
+        "category": "basic"
+      },
+      "7": {
+        "question": "Quelle est ma consommation par semaine ?",
+        "expected_type": "consumption_value",
+        "expected_format": "X.X kWh",
+        "category": "basic"
+      },
+      "8": {
+        "question": "Quelle sera ma consommation le mois prochain ?",
+        "expected_type": "forecast_value",
+        "expected_format": "X.X kWh (prévision)",
+        "category": "forecast"
+      },
+      "9": {
+        "question": "Quelle est ma consommation par minute ?",
+        "expected_type": "consumption_value",
+        "expected_format": "X.X kWh",
+        "category": "basic"
+      },
+      "10": {
+        "question": "Quelle est ma consommation par année ?",
+        "expected_type": "consumption_value",
+        "expected_format": "X.X kWh",
+        "category": "basic"
+      }
+    },
+    "comparison": {
+      "11": {
+        "question": "Ma consommation a-t-elle augmenté ce mois ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      },
+      "12": {
+        "question": "Ma consommation est-elle plus élevée que le mois dernier ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      },
+      "13": {
+        "question": "Ma consommation de jour est-elle plus élevée que la nuit ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      },
+      "14": {
+        "question": "Ma consommation en heures pleines est-elle plus élevée qu'en heures creuses ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      },
+      "15": {
+        "question": "Ma consommation du weekend est-elle différente de la semaine ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      },
+      "16": {
+        "question": "Ma consommation en été est-elle plus élevée qu'en hiver ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      },
+      "17": {
+        "question": "Ma consommation ce matin est-elle plus élevée qu'hier matin ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      },
+      "18": {
+        "question": "Ma consommation ce soir est-elle plus élevée qu'hier soir ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      },
+      "19": {
+        "question": "Ma consommation à midi est-elle plus élevée qu'à 18h ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      },
+      "20": {
+        "question": "Ma consommation cette semaine est-elle plus élevée que la semaine dernière ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "comparison"
+      }
+    },
+    "cost": {
+      "21": {
+        "question": "Combien me coûte ma consommation d'électricité ?",
+        "expected_type": "cost_value",
+        "expected_format": "X.XX €",
+        "category": "cost"
+      },
+      "22": {
+        "question": "Quel est le coût de ma consommation hier ?",
+        "expected_type": "cost_value",
+        "expected_format": "X.XX €",
+        "category": "cost"
+      },
+      "23": {
+        "question": "Quel est le coût de ma consommation ce mois ?",
+        "expected_type": "cost_value",
+        "expected_format": "X.XX €",
+        "category": "cost"
+      },
+      "24": {
+        "question": "Quel sera le coût de ma consommation demain ?",
+        "expected_type": "cost_forecast",
+        "expected_format": "X.XX € (prévision)",
+        "category": "cost_forecast"
+      },
+      "25": {
+        "question": "Quel est le coût moyen par jour ?",
+        "expected_type": "cost_value",
+        "expected_format": "X.XX €",
+        "category": "cost"
+      },
+      "26": {
+        "question": "Quel est le coût moyen par heure ?",
+        "expected_type": "cost_value",
+        "expected_format": "X.XX €",
+        "category": "cost"
+      },
+      "27": {
+        "question": "Quel est le coût moyen par semaine ?",
+        "expected_type": "cost_value",
+        "expected_format": "X.XX €",
+        "category": "cost"
+      },
+      "28": {
+        "question": "Quel sera le coût de ma consommation le mois prochain ?",
+        "expected_type": "cost_forecast",
+        "expected_format": "X.XX € (prévision)",
+        "category": "cost_forecast"
+      },
+      "29": {
+        "question": "Quel est le coût de ma consommation en heures pleines ?",
+        "expected_type": "cost_value",
+        "expected_format": "X.XX €",
+        "category": "cost"
+      },
+      "30": {
+        "question": "Quel est le coût de ma consommation en heures creuses ?",
+        "expected_type": "cost_value",
+        "expected_format": "X.XX €",
+        "category": "cost"
+      }
+    },
+    "analysis": {
+      "31": {
+        "question": "Quand est-ce que je consomme le plus ?",
+        "expected_type": "time_period",
+        "expected_format": "Période (ex: 18h-20h)",
+        "category": "analysis"
+      },
+      "32": {
+        "question": "Quand est-ce que je consomme le moins ?",
+        "expected_type": "time_period",
+        "expected_format": "Période (ex: 2h-6h)",
+        "category": "analysis"
+      },
+      "33": {
+        "question": "Quelles sont mes heures de pointe ?",
+        "expected_type": "time_period",
+        "expected_format": "Période (ex: 18h-20h)",
+        "category": "analysis"
+      },
+      "34": {
+        "question": "Quelles sont mes heures creuses ?",
+        "expected_type": "time_period",
+        "expected_format": "Période (ex: 2h-6h)",
+        "category": "analysis"
+      },
+      "35": {
+        "question": "Y a-t-il des anomalies dans ma consommation ?",
+        "expected_type": "anomaly_detection",
+        "expected_format": "Oui/Non + détails",
+        "category": "analysis"
+      },
+      "36": {
+        "question": "Quelles sont les causes de mes pics de consommation ?",
+        "expected_type": "analysis_result",
+        "expected_format": "Liste des causes",
+        "category": "analysis"
+      },
+      "37": {
+        "question": "Quelles sont les causes de mes baisses de consommation ?",
+        "expected_type": "analysis_result",
+        "expected_format": "Liste des causes",
+        "category": "analysis"
+      },
+      "38": {
+        "question": "Quelle est la tendance de ma consommation ?",
+        "expected_type": "trend_analysis",
+        "expected_format": "Tendance (hausse/baisse/stable)",
+        "category": "analysis"
+      },
+      "39": {
+        "question": "Ma consommation est-elle stable ?",
+        "expected_type": "stability_analysis",
+        "expected_format": "Oui/Non + justification",
+        "category": "analysis"
+      },
+      "40": {
+        "question": "Ma consommation est-elle saisonnière ?",
+        "expected_type": "seasonality_analysis",
+        "expected_format": "Oui/Non + justification",
+        "category": "analysis"
+      }
+    },
+    "special": {
+      "41": {
+        "question": "Si le coût de l'électricité est de 0,20 € le kilowattheure, de combien dois-je réduire ma consommation pour économiser 5 € le mois suivant ?",
+        "expected_type": "calculation_result",
+        "expected_format": "X.X kWh",
+        "category": "special"
+      },
+      "42": {
+        "question": "Est-ce que ma consommation de nuit a augmenté récemment ?",
+        "expected_type": "comparison_result",
+        "expected_format": "Oui/Non + pourcentage",
+        "category": "special"
+      },
+      "43": {
+        "question": "Anomalies dans les relevés d'intensité ?",
+        "expected_type": "anomaly_detection",
+        "expected_format": "Oui/Non + détails",
+        "category": "special"
+      }
+    },
+    "validation": {
+      "44": {
+        "question": "",
+        "expected_type": "error_handling",
+        "expected_format": "Message d'erreur pour question vide",
+        "category": "validation"
+      },
+      "45": {
+        "question": "Quelle est la météo ?",
+        "expected_type": "error_handling",
+        "expected_format": "Message d'erreur pour question hors sujet",
+        "category": "validation"
+      },
+      "46": {
+        "question": "???",
+        "expected_type": "error_handling",
+        "expected_format": "Message d'erreur pour question invalide",
+        "category": "validation"
+      }
+    }
+  },
+  "performance_criteria": {
+    "response_time": {
+      "target": "< 5 secondes",
+      "acceptable": "< 10 secondes",
+      "unacceptable": ">= 10 secondes"
+    },
+    "success_rate": {
+      "target": ">= 90%",
+      "acceptable": ">= 80%",
+      "unacceptable": "< 80%"
+    },
+    "accuracy": {
+      "target": ">= 95%",
+      "acceptable": ">= 85%",
+      "unacceptable": "< 85%"
+    }
+  },
+  "categories_summary": {
+    "basic": {
+      "count": 10,
+      "description": "Questions de base sur la consommation"
+    },
+    "comparison": {
+      "count": 10,
+      "description": "Questions de comparaison entre périodes"
+    },
+    "cost": {
+      "count": 10,
+      "description": "Questions sur les coûts"
+    },
+    "analysis": {
+      "count": 10,
+      "description": "Questions d'analyse avancée"
+    },
+    "special": {
+      "count": 3,
+      "description": "Questions spéciales du cahier des charges"
+    },
+    "validation": {
+      "count": 3,
+      "description": "Questions de validation des cas d'erreur"
+    }
+  }
+}
+
+
+
+
