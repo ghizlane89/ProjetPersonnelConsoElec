@@ -1,0 +1,88 @@
+# Energy Agent - .gitignore pour GitHub
+# ================================================
+
+# Variables d'environnement
+.env
+.env.local
+.env.*.local
+
+# Données sensibles et volumineuses
+*.duckdb
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environnements virtuels
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Données de développement
+data_genere/processed/*.duckdb
+data_genere/backups/
+data_genere/raw/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.bak
+
+# Fichiers de test temporaires
+test_*.py
+debug_*.py
+
+# Fichiers obsolètes
+app_old.py
+app copy.py
+app2 copy.py
