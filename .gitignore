@@ -1,14 +1,12 @@
 # Variables d'environnement (contient la clé API Gemini)
 .env
 
-# Données sensibles
-*.duckdb
-*.db
-*.duckdb.wal
+# Données sensibles (on garde les .duckdb pour le déploiement)
+# *.duckdb  # COMMENTÉ pour permettre le déploiement
+# *.db      # COMMENTÉ pour permettre le déploiement
+# *.duckdb.wal  # COMMENTÉ pour permettre le déploiement
 
-# Données Energy Agent
-data_genere/processed/*.duckdb
-data_genere/processed/*.duckdb.wal
+# Données Energy Agent - Backups seulement (on garde processed pour le déploiement)
 data_genere/backups/*.duckdb
 data_genere/raw/*.csv
 
