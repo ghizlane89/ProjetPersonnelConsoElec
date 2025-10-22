@@ -24,7 +24,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 class GapGenerator:
     """Générateur de données pour combler les gaps"""
     
-    def __init__(self, db_path: str = "data_genere/processed/energy_fictional_2h.duckdb"):
+    def __init__(self, db_path: str = "../data_genere/processed/energy_fictional_2h.duckdb"):
         self.db_path = db_path
         self.logger = logging.getLogger(__name__)
         

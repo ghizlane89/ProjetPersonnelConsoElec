@@ -4,6 +4,13 @@
 # Données sensibles
 *.duckdb
 *.db
+*.duckdb.wal
+
+# Données Energy Agent
+data_genere/processed/*.duckdb
+data_genere/processed/*.duckdb.wal
+data_genere/backups/*.duckdb
+data_genere/raw/*.csv
 
 # Fichiers de données originaux (trop volumineux pour Git)
 data/raw/*.csv
