@@ -15,7 +15,6 @@ import sys
 import os
 from typing import Dict, Any, TypedDict, Optional
 from langgraph.graph import StateGraph, END
-from langchain.chains import LLMChain
 from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 
@@ -130,12 +129,10 @@ Réponse:
             temperature=0  # Pour validation précise
         )
         
-        # Validateur sémantique LangChain officiel
-        self.semantic_validator = LLMChain(
-            llm=langchain_gemini,
-            prompt=validation_prompt,
-            verbose=False
-        )
+        # Validateur sémantique LangChain (compatible v0.1.0+)
+        # Stocker le LLM et le prompt séparément pour utilisation directe
+        self.semantic_validator_llm = langchain_gemini
+        self.semantic_validator_prompt = validation_prompt
     
     def _create_workflow(self):
         """Crée le workflow LangGraph refactorisé"""
@@ -1130,8 +1127,22 @@ Réponse:
         self.logger.info(f"🔍 Validation sémantique: {question}")
         
         try:
-            # Appeler le validateur LangChain
-            validation_result = self.semantic_validator.run(question=question)
+            # Appeler le validateur LangChain (compatible v0.1.0+)
+            # Utiliser directement le LLM avec le prompt formaté
+            from langchain_core.messages import HumanMessage
+            
+            # Formater le prompt et créer un message
+            formatted_prompt_text = self.semantic_validator_prompt.format(question=question)
+            message = HumanMessage(content=formatted_prompt_text)
+            response = self.semantic_validator_llm.invoke([message])
+            
+            # Extraire le contenu de la réponse
+            if hasattr(response, 'content'):
+                validation_result = response.content
+            elif isinstance(response, str):
+                validation_result = response
+            else:
+                validation_result = str(response)
             
             # Nettoyer la réponse (supprimer espaces, etc.)
             period_code = validation_result.strip().upper()
