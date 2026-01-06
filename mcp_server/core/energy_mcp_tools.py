@@ -16,11 +16,12 @@ import os
 import pandas as pd
 import numpy as np
 from typing import Dict, Any, Optional, List
-from langchain_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
-from langchain.agents import initialize_agent
-from langchain_experimental.agents import create_pandas_dataframe_agent
-from langchain_community.utilities.sql_database import SQLDatabase
-from langchain_community.llms import OpenAI
+# Imports LangChain désactivés - non utilisés et potentiellement incompatibles avec v0.1.0+
+# from langchain_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
+# from langchain.agents import initialize_agent  # Désactivé - n'existe plus dans LangChain v0.1.0+
+# from langchain_experimental.agents import create_pandas_dataframe_agent  # Désactivé temporairement
+# from langchain_community.utilities.sql_database import SQLDatabase
+# from langchain_community.llms import OpenAI  # Désactivé - non utilisé
 from langchain_google_genai import ChatGoogleGenerativeAI
 import logging
 
